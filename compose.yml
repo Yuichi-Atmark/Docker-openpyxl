@@ -1,0 +1,10 @@
+services:
+  openpyxl:
+    restart: always
+    build: openpyxl
+    container_name: openpyxl
+    tty: true
+    volumes:
+      - ./input:/root/input
+      - ./output:/root/output
+      - ./src:/root/src

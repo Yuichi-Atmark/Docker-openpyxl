@@ -1,6 +1,6 @@
-11services:
+services:
   openpyxl:
-    restart: always
+#    restart: always
     build: openpyxl
     container_name: openpyxl
     tty: true

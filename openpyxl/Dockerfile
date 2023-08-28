@@ -1,5 +1,5 @@
 FROM python:3
-USER root
+# USER root
 
 RUN apt-get update 
 RUN apt-get -y install locales && \
@@ -19,4 +19,4 @@ RUN python -m pip install openpyxl black
 
 WORKDIR /root/src
 
-# ENTRYPOINT ["/bin/bash", "-c", "python sample.py"]
+ENTRYPOINT ["/bin/bash", "-c", "python cnv-xlsx.py"]
